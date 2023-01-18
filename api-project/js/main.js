@@ -29,13 +29,19 @@ import "../styles/style.css";
 // we can add . then once a promise resolves
 // code says that once the promise is fulfilled 
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
+const URL = "https://acnhapi.com/v1/fish";
 
 async function getData(URL) {
     try{
-        const responce = await fetch(URL);
-        const data = await Response.json();
-        Document.getElementById("api-response").textContent= data.content;
+        const response = await fetch(URL);
+        const data = await response.json();
+        console.log(data);
+        data.bitterling
+        document.getElementById("api-response").textContent= data.content;
+       
     } catch (error) {
         console.log(error);
     }
     }
+
+    getData(URL);
