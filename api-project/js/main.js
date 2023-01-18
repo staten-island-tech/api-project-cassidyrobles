@@ -13,19 +13,20 @@ import "../styles/style.css";
 //once a promise is fulfilled you can do something with it
 //sometimes data takes a long time to load and will go on to the next line of code, which is bad and promises will help prevent this
 
-function greet(name){
-    const greetPromise = new Promise(function(resolve, reject){
-        resolve(`Hello ${name}`);
-    })
-    return greetPromise;
-}
-const suzie = greet("suzie");
+//function greet(name){
+    //const greetPromise = new Promise(function(resolve, reject){
+       // resolve(`Hello ${name}`);
+    //})
+   // return greetPromise;
+//}
+//const suzie = greet("suzie");
 
-suzie.then((result)=>{
-    console.log(result);
-});
+//suzie.then((result)=>{
+   // console.log(result);
+//});
 // when promise resolves say hello and persons name
 // when this runs it will say promis fulfilled hello suzie because the promise is returned and resolved the string is returned 
 // we can add . then once a promise resolves
 // code says that once the promise is fulfilled 
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
+
