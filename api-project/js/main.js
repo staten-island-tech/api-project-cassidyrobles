@@ -30,3 +30,12 @@ import "../styles/style.css";
 // code says that once the promise is fulfilled 
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
 
+async function getData(URL) {
+    try{
+        const responce = await fetch(URL);
+        const data = await Response.json();
+        Document.getElementById("api-response").textContent= data.content;
+    } catch (error) {
+        console.log(error);
+    }
+    }
