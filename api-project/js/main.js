@@ -38,6 +38,17 @@ async function getData(URL) {
         console.log(data);
         data.bitterling
         document.getElementById("api-response").textContent= data.content;
+        
+
+        DOMselectors.box.insertAdjacentHTML(
+            "beforeend",
+            `<section class="card">
+            <p>${el.museum-phrase}</p>
+            <img class= "theimage" src="${el.img}">
+            </section>`
+        );
+    
+
        
     } catch (error) {
         console.log(error);
@@ -45,3 +56,4 @@ async function getData(URL) {
     }
 
     getData(URL);
+
