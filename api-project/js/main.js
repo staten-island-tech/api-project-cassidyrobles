@@ -35,19 +35,18 @@ async function getData(URL) {
     try{
         const response = await fetch(URL);
         const data = await response.json();
-        console.log(data);
         data.bitterling
         document.getElementById("api-response").textContent= data.content;
+
+        data.filter((el)=>
+        el.file-name.includes("bitterling")
+        .forEach(el => {
+            console.log(el.museum-phrase)
+        }));
+       
         
 
-        DOMselectors.box.insertAdjacentHTML(
-            "beforeend",
-            `<section class="card">
-            <p>${el.museum-phrase}</p>
-            <img class= "theimage" src="${el.img}">
-            </section>`
-        );
-    
+        
 
        
     } catch (error) {
