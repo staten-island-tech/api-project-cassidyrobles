@@ -32,7 +32,10 @@ import { DOMselectors } from "./DOM";
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
 const URL = "https://www.omdbapi.com/?apikey=b376b4a9&s=aba";
 
-async function getData(URL) {
+DOMselectors.section.innerHTML = "";
+
+async function getData() {
+    DOMselectors.section.innerHTML = "";
     try{
         const response = await fetch(URL); //
         const data = await response.json();
@@ -57,6 +60,4 @@ async function getData(URL) {
     }
     }
 
-    getData(URL);
-
-btn.addEventListener("click", getData);
+DOMselectors.btn.addEventListener("click", getData);
