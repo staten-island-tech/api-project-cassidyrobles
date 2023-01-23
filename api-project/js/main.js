@@ -1,4 +1,5 @@
 import "../styles/style.css";
+import { DOMselectors } from "./DOM";
 
 //console.log("start");
 //setTimeout(()=> {
@@ -29,26 +30,28 @@ import "../styles/style.css";
 // we can add . then once a promise resolves
 // code says that once the promise is fulfilled 
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
-const URL = "https://acnhapi.com/v1/fish";
+const URL = "https://www.omdbapi.com/?apikey=b376b4a9&s=aba";
 
 async function getData(URL) {
     try{
-        const response = await fetch(URL);
+        const response = await fetch(URL); //
         const data = await response.json();
-        data.bitterling
-        document.getElementById("api-response").textContent= data.content;
-
-        data.filter((el)=>
-        el.file-name.includes("bitterling")
-        .forEach(el => {
-            console.log(el.museum-phrase)
-        }));
+        console.log(data);
+        //const Year = "2008";
+        let year = DOMselectors.year.value
+        data.Search.filter( (el) => el.Year == `${year}`)
+        .forEach(el => { 
+            console.log(el.Title);
+            DOMselectors.section.insertAdjacentHTML(
+                "beforeend",
+                `<div>
+                <h3 class="movie">${el.Title}</h3>
+                </div>`
+            );
+            
+        });
        
         
-
-        
-
-       
     } catch (error) {
         console.log(error);
     }
@@ -56,3 +59,4 @@ async function getData(URL) {
 
     getData(URL);
 
+btn.addEventListener("click", getData);

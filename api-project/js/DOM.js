@@ -1,6 +1,7 @@
 const DOMselectors= {
-    btn: document.querySelector(".btn"),
-    bar: document.querySelector("#bar"),
-    section: document.querySelector(".section"),
+    btn: document.querySelector("#btn"),
+    section: document.querySelector(".box"),
+    year: document.querySelector("#stuff"),
+    
 }
 export{DOMselectors};
