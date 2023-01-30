@@ -49,10 +49,10 @@ async function getData() {
             DOMselectors.box.insertAdjacentHTML(
                 "beforeend",
                 `<div class="card">
-                <h2 class="fishName">${el[1]["file-name"].split("_").join(" ")}</h2>
+                <div class="fishName">${el[1]["file-name"].split("_").join(" ")}</div>
                 <img class="images" alt="${alts[el[0]]}" src="${el[1]["image_uri"]}" />
                
-                </div>`
+                </iv>`
             );
             
         });
