@@ -1,6 +1,6 @@
 import "../styles/style.css";
 import { DOMselectors } from "./DOM";
-
+import { alts } from "./alt";
 //console.log("start");
 //setTimeout(()=> {
     //console.log("Timer");
@@ -30,7 +30,7 @@ import { DOMselectors } from "./DOM";
 // we can add . then once a promise resolves
 // code says that once the promise is fulfilled 
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
-const URL = "https://www.omdbapi.com/?apikey=b376b4a9&s=aba";
+const URL = "https://acnhapi.com/v1/fish/";
 
 DOMselectors.section.innerHTML = "";
 
@@ -39,16 +39,19 @@ async function getData() {
     try{
         const response = await fetch(URL); //
         const data = await response.json();
-        console.log(data);
-        //const Year = "2008";
-        let year = DOMselectors.year.value
-        data.Search.filter( (el) => el.Year == `${year}`)
+        Object.entries(data)
+        console.log(Object.entries(data));
+        
+        let price = DOMselectors.price.value
+        Object.entries(data).filter( (el) => el[1].price == `${price}`)
         .forEach(el => { 
-            console.log(el.Title);
+            console.log(el[1]["file-name"]);
             DOMselectors.section.insertAdjacentHTML(
                 "beforeend",
                 `<div>
-                <h3 class="movie">${el.Title}</h3>
+                <h3 class="fishName">${el[1]["file-name"].split("_").join(" ")}</h3>
+                <img class="images" alt="${alts[el[0]]}" src="${el[1]["image_uri"]}" />
+               
                 </div>`
             );
             
