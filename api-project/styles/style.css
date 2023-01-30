@@ -1,3 +1,61 @@
 body{
-  background-color:purple;
+  background-color:#5F9EA0;
+  text-align: center;
+  font-family: 'Paytone One', sans-serif;
+}
+
+#btn{
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 22px;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+#stuff{
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 22px;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+.box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin:100px;
+  align-items: center;
+  
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding:0px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
+  width: 33%;
+  background-image: url("https://img.game8.co/3254087/2d21c1fe9af0b0c7bdbae34d8d0aaacb.png/show");
+  background-size: cover;
+  border: 7px solid white;
+}
+
+.images{
+  height: 150px;
+  align-items: center;
+}
+
+.fishName{
+  font-size:20px;
 }

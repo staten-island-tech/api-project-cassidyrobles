@@ -32,10 +32,10 @@ import { alts } from "./alt";
 // we get data(suzie) and in the process of getting that data we get a promise. Then we do something with that data, like log it to the console
 const URL = "https://acnhapi.com/v1/fish/";
 
-DOMselectors.section.innerHTML = "";
+DOMselectors.box.innerHTML = "";
 
 async function getData() {
-    DOMselectors.section.innerHTML = "";
+    DOMselectors.box.innerHTML = "";
     try{
         const response = await fetch(URL); //
         const data = await response.json();
@@ -46,10 +46,10 @@ async function getData() {
         Object.entries(data).filter( (el) => el[1].price == `${price}`)
         .forEach(el => { 
             console.log(el[1]["file-name"]);
-            DOMselectors.section.insertAdjacentHTML(
+            DOMselectors.box.insertAdjacentHTML(
                 "beforeend",
-                `<div>
-                <h3 class="fishName">${el[1]["file-name"].split("_").join(" ")}</h3>
+                `<div class="card">
+                <h2 class="fishName">${el[1]["file-name"].split("_").join(" ")}</h2>
                 <img class="images" alt="${alts[el[0]]}" src="${el[1]["image_uri"]}" />
                
                 </div>`
