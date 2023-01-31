@@ -52,7 +52,7 @@ async function getData() {
                 <div class="fishName">${el[1]["file-name"].split("_").join(" ")}</div>
                 <img class="images" alt="${alts[el[0]]}" src="${el[1]["image_uri"]}" />
                
-                </iv>`
+                </div>`
             );
             
         });
