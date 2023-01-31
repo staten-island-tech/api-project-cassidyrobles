@@ -12,8 +12,30 @@ const alts= {
 "black_bass": "large green and yellow fish on a beach background",
 "pond_smelt": "long skinny silver fish with brown top on a beach background",
 "sea_bass": "big fish with silver belly and green top on a beach background",
-
-
+"neon_tetra": "tiny bright blue fish with bright pink tail on a beach background",
+"zebra_turkeyfish": "medium sized beige fish with large gins and orange stripes on a beach background",
+"squid": "green squid with blue eyes on a beach background",
+"ribbon_eel": "bright blue eel with bright yellow stripe on top on a beach background",
+"salmon": "medium sized green fish with orange stripes on a beach background",
+"catfish": "long large grey fish with a grey-blue belly on a beach background",
+"tilapia": "medium sized blue shiny fish with pink fins on a beach background",
+"rainbowfish": "tiny shiny blue, green, and pink fish on a beach background",
+"olive_flounder": "large, flat, green oval shaped fish on a beach background",
+"bitterling": "small pink and bright blue fish on a beach background",
+"sweetfish": "medium sized long green fish with a grey belly and yellow fins on a beach background",
+"cherry_salmon": "long geen and pink-orange fish with grey spots on a beach background",
+"sea_butterfly": "white and orange fish with two fins, making it look like a  butterfly, on a beach background",
+"surgeonfish": "blue and black fish with a yellow fin on a beach background",
+"butterfly_fish": "medium sized orange and yellow fish with a black stripe on its face on a beach background",
+"snapping_turtle": "large orange-brown turtle on a beach background",
+"blowfish": "small green and grey fish on a beach background",
+"barred_knifejaw": "medium sized white fish with black stripes",
+"golden_trout": "long orange-yellow fish with grey spots on a beach background",
+"stringfish": "long fish with a green head that fades to a salmon pink color with grey spots on a beach background",
+"dorado": "medium sized metalic green-yellow fish with orange fins on a beach background",
+"great_white_shark": "large shark with blue top and white belly on a beach background",
+"barreleye": "small grey fish with blue fins and clear head with green circles on a beach background",
+"coelacanth": "large grey fish with many blue fins and light grey spots on a beach background",
 };
 
 export{alts};
