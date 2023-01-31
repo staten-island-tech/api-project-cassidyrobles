@@ -73,6 +73,7 @@ h1{
   text-align: center;
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
   width: 33%;
+  height:350px;
   background-image: url("https://img.game8.co/3254087/2d21c1fe9af0b0c7bdbae34d8d0aaacb.png/show");
   background-size: cover;
   border: 7px solid white;
@@ -85,6 +86,7 @@ h1{
 
 .fishName{
   font-size:20px;
+  padding:40px;
 }
 
 .label{
